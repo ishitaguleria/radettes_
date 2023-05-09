@@ -1,0 +1,110 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>Display Webcam Stream</title>
+ 
+<style>
+body{
+	display: flex;
+    margin: 80px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-direction: column;
+	background-image: linear-gradient(to bottom, #000000, #241c23, #373447, #39526e, #26748e, #168295, #0c9099, #1d9d99, #179a94, #11978f, #09938b, #019086);    align-content: center;
+
+}
+h2{
+display: flex;
+color:white;
+align-items: center;
+justify-content: center;
+background-color: #000000;
+}
+video {
+	border: #000000 solid;
+      background-color: black;
+      margin-bottom: 8rem;
+			margin-top: 3rem;
+			margin-left: 3rem;
+			margin-right: 3rem;
+      height:350px;
+      width:400px;
+        }
+#error {
+            color: red;
+            padding: 0.6rem;
+            background-color: rgb(236 157 157);
+            margin-bottom: 0.6rem;
+            display: none;
+        }
+        nav{
+  font-family:'Ubuntu';
+  width:90vw;
+  background-color: black;  
+  height: 60px;
+  margin: 1px;
+  border-radius: 10px;
+  margin-block-start: 20px;
+  margin-block-end: 20px;
+}
+nav ul{
+  
+  list-style-type: none;
+  margin-block-end: 6em;
+  margin-inline-start: 2px;
+  margin-inline-end: 5px;
+  padding-inline-start: 10px;
+  color: white;
+ 
+  
+}
+nav ul li{
+  padding: 0 12px;
+  float: right;
+  cursor: pointer;
+}
+.brand img{
+  width: 60px;
+  padding:10px 5px ;
+  align-items: left;
+}
+.brand {
+  display: flex;
+  align-items: flex-start;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  margin: 2px;
+}
+#navbar:hover{
+  background-color: darkcyan;
+}
+</style>
+</head>
+ 
+<body>
+	<body>
+         <nav id="navbar">
+        <ul>
+            <li class="brand" style="float: left;"><img src="images/logo-modified.png" alt="Radettes" /> Radettes </li>
+            <a href="contactus.html"><li>Contact</li></a>
+            <a href="aboutus.html"><li>About</li></a>
+            <a href="index.html"><li>Home</li></a>
+            <a href="mood.html"><li>Mood Detector</li></a>
+        </ul>
+
+    </nav>
+		<h2>WebCam for Mood Detection</h2>
+	  
+		<video id='video'
+			    
+				autoplay playsinline>
+			Sorry, video element not supported in your browser
+		</video>
+		<div id="error"></div>
+	</br>
+		<button onclick="openCamera()"> Open Camera</button>
+<script src="moodworking.jss"></script>
+</body>
+</html>

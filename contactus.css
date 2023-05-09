@@ -1,0 +1,126 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela:ital,wght@1,300&Rounddisplay=swap');
+body {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    color: white;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to bottom, #000000, #241c23, #373447, #39526e, #26748e, #168295, #0c9099, #1d9d99, #179a94, #11978f, #09938b, #019086);    align-content: center;
+  }
+
+.container {
+	width: 80%;
+	margin: 50px auto;
+	background-color:black;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+h1 {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+label {
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+input[type=text], input[type=email], textarea {
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+	margin-bottom: 20px;
+	box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+input[type=submit] {
+	background-color: #4CAF50;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+input[type=submit]:hover {
+	background-color: #3e8e41;
+}
+nav{
+    font-family:'Ubuntu';
+    width:100vw;
+    background-color: black;
+    display: block;
+    height: 60px;
+    margin: 4px;
+    border-radius: 10px;
+    color:black
+  }
+  nav ul{
+    
+    list-style-type: none;
+    margin-block-start: 1em;
+    margin-block-end: 4em;
+    margin-inline-start: 2px;
+    margin-inline-end: 15px;
+    padding-inline-start: 12px;
+    color: black;
+    
+    
+  }
+  nav ul li{
+    padding: 0 18px;
+    float: right;
+    cursor: pointer;
+  }
+  .brand img{
+    width: 65px;
+    padding: 0 4px ;
+    align-items: left;
+  }
+  .brand {
+    display: flex;
+    align-items: flex-start;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    margin: 2px;
+  }
+  body{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+    padding:20px;
+    background-attachment: fixed;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    margin: 10px;
+    margin-block-start: 1em;
+  margin-block-end: 4em;
+  margin-inline-start: 2px;
+  margin-inline-end: 15px;
+  background-color: gray;
+}
+
+*{
+  margin: 4px;
+  padding: 0px;
+  
+}
+#navibar:hover{
+    background-color: darkcyan;
+  }
+
+  a{
+    color :white;
+  }

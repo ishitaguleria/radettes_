@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Radettes</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="brand" style="float: left;"><img src="images/logo-modified.png" alt="Radettes" /> Radettes </li>
+            <a href="contactus.html"><li>Contact</li></a>
+            <a href="aboutus.html"><li>About</li></a>
+            <a href="#"><li>Home</li></a>
+            <a href="mood.html"><li>Mood Detector</li></a>
+        </ul>
+
+    </nav>
+    <div class="container">
+
+    </div>
+    <div class="containerpopup" tabindex="0" onblur="hidemodal()">
+        <img src="images\10.jpg" height="50%" width="70%" id="playingsong" />
+        </br>
+        <span id="music">Jogi</span>
+        <div class="bottomofcp">
+            <input type="range" name="range" id="myProgressBarofcp" min="0" max="100">
+            <div class="icons">
+                <i class="fas fa-solid fa-shuffle" style="color: white;" onclick="colorchng(this)"></i>
+                <i class="fa-solid fa-2x fa-backward" style="color: white;"></i>
+                <i class="fa-regular fa-3x fa-circle-play" id="iconplaypause" style="color: white;"
+                    onclick="changeIcon(this)"></i>
+                <i class="fa-solid fa-2x fa-forward" style="color: white;"></i>
+                <i class="fas fa-solid fa-1x fa-repeat" style="color: white;" onclick="colorchng(this)"></i>
+            </div>
+            <div class="moreicons">
+
+                <i class="fa-solid fa-volume-high" style="color: white;" onclick="changevolume(this)"></i>
+                <input type="range" name="range" id="volumebar" min="0" max="100" value="90" onchange="volume_change()">
+            </div>
+        </div>
+    </div>
+    <audio id="audio_controls">
+    </audio>
+    <div class="gridsforsong">
+        <p style="color:white;font-size: 24px;">Songs</p>
+        <div class="grid-item" onclick="play_song(event)"><img src="images/01.jpeg" />
+           
+            <p>Kahani suno 2.O</p>
+        </div>
+        <div class="grid-item" onclick="play_song(event)"><img src="images/02.jpeg" />
+            
+            <p> Mi Amor </p>
+        </div>
+        <div class="grid-item" onclick="play_song(event)"><img src="images/03.jpeg" />
+           
+            <p> MockingBird </p>
+        </div>
+        <div class="grid-item" onclick="play_song(event)"><img src="images/04.jpeg" />
+            
+            <p> Traitor </p>
+        </div>
+        <div class="grid-item" onclick="play_song(event)"><img src="images/05.jpeg" />
+            
+            <p> As it Was </p>
+        </div>
+        <div class="grid-item" onclick="play_song(event)"><img src="images/06.jpeg" />
+            
+            <p> Out of Time </p>
+        </div>
+        <div class="grid-item" onclick="play_song(event)"><img src="images\07.jpg" /> 
+            <p> We fell in love in october</p>
+        </div>
+        <div class="grid-item" onclick="play_song(event)"><img src="images\08.jpg" /> 
+            <p> Before you go</p>
+        </div>
+        <div class="grid-item" onclick="play_song(event)"><img src="images\09.jpg" /> 
+            <p> Ja Tujhko</p>
+        </div>
+        <div class="grid-item" onclick="play_song(event)"><img src="images\10.jpg" /> 
+            <p> Jogi </p>
+        </div>
+
+    </div>
+    <div class="gridsforalbums">
+        <p style="color:white;font-size: 24px;">Albums</p>
+        <div class="grid-item" onclick="play_song(event)"><img src="images/01.jpeg" />
+            <p>Kahani suno 2.O</p>
+        </div>
+        <div class="grid-item" onclick="play_song(event)"><img src="images/02.jpeg" />
+            <p> Mi Amor </p>
+        </div>
+        <div class="grid-item" onclick="play_song(event)"><img src="images/03.jpeg" />
+            <p> MockingBird </p>
+        </div>
+        <div class="grid-item" onclick="play_song(event)"><img src="images/04.jpeg" />
+            <p> Traitor </p>
+        </div>
+        <div class="grid-item" onclick="play_song(event)"><img src="images/05.jpeg" />
+            <p> As it Was </p>
+        </div>
+        <div class="grid-item" onclick="play_song(event)"><img src="images/06.jpeg" />
+            <p> Out of Time </p>
+        </div>
+        <div class="grid-item" onclick="play_song(event)"><img src="images\07.jpg" />
+            <p> We fell in love in october</p>
+        </div>
+        <div class="grid-item" onclick="play_song(event)"><img src="images\08.jpg" />
+            <p> Before you go</p>
+        </div>
+        <div class="grid-item" onclick="play_song(event)"><img src="images\09.jpg" />
+            <p> Ja Tujhko</p>
+        </div>
+        <div class="grid-item" onclick="play_song(event)"><img src="images\10.jpg" />
+            <p> Jogi </p>
+        </div>
+
+    </div>
+    <div class="gridsforplaylist">
+        <p style="color:white;font-size: 24px;">My Library</p>
+        <div class="grid-item" onclick="play_song(event)"><img src="images/01.jpeg" />
+            <p>Kahani suno 2.O</p>
+        </div>
+        <div class="grid-item" onclick="play_song(event)"><img src="images/02.jpeg" />
+            <p> Mi Amor </p>
+        </div>
+        <div class="grid-item" onclick="play_song(event)"><img src="images/03.jpeg" />
+            <p> MockingBird </p>
+        </div>
+        <div class="grid-item" onclick="play_song(event)"><img src="images/04.jpeg" />
+            <p> Traitor </p>
+        </div>
+        <div class="grid-item" onclick="play_song(event)"><img src="images/05.jpeg" />
+            <p> As it Was </p>
+        </div>
+        <div class="grid-item" onclick="play_song(event)"><img src="images/06.jpeg" />
+            <p> Out of Time </p>
+        </div>
+        <div class="grid-item" onclick="play_song(event)"><img src="images\07.jpg" />
+            <p> We fell in love in october</p>
+        </div>
+        <div class="grid-item" onclick="play_song(event)"><img src="images\08.jpg" />
+            <p> Before you go</p>
+        </div>
+        <div class="grid-item" onclick="play_song(event)"><img src="images\09.jpg" />
+            <p> Ja Tujhko</p>
+        </div>
+        <div class="grid-item" onclick="play_song(event)"><img src="images\10.jpg" />
+            <p> Jogi </p>
+        </div>
+
+    </div>
+    <div class="bottom">
+        <input type="range" name="range" id="myProgressBar" min="0" max="100">
+        <div class="icons">
+            <i class="fas fa-solid fa-shuffle" style="color: white;" onclick="colorchng(this)"></i>
+            <i class="fa-solid fa-2x fa-backward" style="color: white;" onclick="playPrev()"></i>
+            <i class="fa-regular fa-3x fa-circle-play" style="color: white;" id='play' onclick="changeIcon(this)"></i>
+            <i class="fa-solid fa-2x fa-forward" style="color: white;" onclick="playNext()"></i>
+            <i class="fas fa-solid fa-1x fa-repeat" style="color: white;" onclick="colorchng(this)"></i>
+        </div>
+        <div class="moreicons">
+            <p id="popup">  Jogi</p>
+            <i class="fa-solid fa-volume-high" style="color: white;" onclick="changevolume(this)"></i>
+            <input type="range" name="range" id="volumebar" min="0" max="100">
+            
+            
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/40a1782265.js" crossorigin="anonymous"></script>
+    <script src="working.js" async defer></script>
+</body>
+
+</html>

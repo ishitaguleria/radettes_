@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela:ital,wght@1,300&Rounddisplay=swap');
+
+body{
+    display: flex;
+    background-image: linear-gradient(to bottom, #000000, #241c23, #373447, #39526e, #26748e, #168295, #0c9099, #1d9d99, #179a94, #11978f, #09938b, #019086);    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+    padding:15px;
+    background-attachment: fixed;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 20px;
+    margin-inline-end: 20px;
+    background-color: black;
+}
+
+*{
+  margin: 5px;
+  padding: 4px;
+}
+nav{
+  font-family:'Ubuntu';
+  width:100vw;
+  background-color: black;  
+  height: 60px;
+  margin: 1px;
+  border-radius: 10px;
+  margin-block-start: 20px;
+  margin-block-end: 20px;
+}
+nav ul{
+  
+  list-style-type: none;
+  margin-block-end: 6em;
+  margin-inline-start: 2px;
+  margin-inline-end: 5px;
+  padding-inline-start: 10px;
+  color: white;
+ 
+  
+}
+nav ul li{
+  padding: 0 12px;
+  float: right;
+  cursor: pointer;
+}
+.brand img{
+  width: 70px;
+  padding:10px 5px ;
+  align-items: left;
+}
+.brand {
+  display: flex;
+  align-items: flex-start;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  margin: 2px;
+}
+.containerpopup{
+  min-height: 65vh;
+  background-color: black;
+  color: white;
+  display: none;
+  margin: 85px auto;
+  width: 27%;
+  box-sizing: border-box;
+  position: absolute;
+  z-index:999;
+  text-align: center;
+  height:30%;
+}
+#playingsong{
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+}
+#music{
+  font-size: 2rem;
+}
+#myProgressBarofcp{
+  width:90%;
+}
+/*#close {
+  float:right;
+  display:inline-block;
+  padding:2px 5px;
+  background-color:red;
+  color: white;
+}*/
+.gridsforsong{
+  display:flex;
+  padding:20px;
+  white-space: nowrap;
+  column-gap: 15px;
+  background-image: linear-gradient(to right top, #000000, #191718, #2b262a, #3c373f, #4b4a55, #4b4a55, #4b4a55, #4b4a55, #3c373f, #2b262a, #191718, #000000);
+  overflow: hidden;
+  background-color: #000000;
+ border-radius:20px;
+}
+.gridsforsong:hover{
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.gridsforsong::-webkit-scrollbar {
+  width: 6px;
+}
+
+.gridsforsong::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px rgba(14, 61, 71, 0.103); 
+  border-radius: 8px;
+}
+
+.gridsforsong::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  -webkit-box-shadow: inset 0 0 4px rgba(0,0,0,0.5); 
+}
+.gridsforalbums{
+  display:flex;
+  padding:20px;
+  white-space: nowrap;
+  background-image: linear-gradient(to right top, #000000, #191718, #2b262a, #3c373f, #4b4a55, #4b4a55, #4b4a55, #4b4a55, #3c373f, #2b262a, #191718, #000000);
+  column-gap: 15px;
+  border-radius:20px;
+  overflow: hidden;
+}
+.gridsforalbums:hover{
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.gridsforalbums::-webkit-scrollbar {
+  width: 6px;
+}
+
+.gridsforalbums::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px rgba(14, 61, 71, 0.103); 
+  border-radius: 8px;
+}
+
+.gridsforalbums::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  -webkit-box-shadow: inset 0 0 4px rgba(0,0,0,0.5); 
+}
+.gridsforplaylist{
+  display:flex;
+  padding:20px;
+  white-space: nowrap;
+  column-gap: 15px;
+  background-image: linear-gradient(to right top, #000000, #191718, #2b262a, #3c373f, #4b4a55, #4b4a55, #4b4a55, #4b4a55, #3c373f, #2b262a, #191718, #000000);
+  border-radius:20px;
+  overflow: hidden;
+}
+.gridsforplaylist:hover{
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.gridsforplaylist::-webkit-scrollbar {
+  width: 6px;
+}
+
+.gridsforplaylist::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px rgba(14, 61, 71, 0.103); 
+  border-radius: 8px;
+}
+
+.gridsforplaylist::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  -webkit-box-shadow: inset 0 0 4px rgba(0,0,0,0.5); 
+}
+.gridsforsong p{
+font-size: 18px;
+cursor: pointer;
+text-align: center;
+}
+.gridsforalbums p{
+  font-size: 18px;
+  cursor: pointer;
+  text-align: center;
+  }
+  .gridsforplaylist p{
+    font-size: 18px;
+    cursor: pointer;
+    text-align: center;
+    }
+.grid-item {
+  display: inline-block;
+  color:white;
+  background-color:black;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  transform-origin: bottom;
+}
+.grid-item:hover{
+  animation-name:bounce;
+  animation-timing-function: ease;
+}
+@keyframes bounce {
+  0% {transform: translateY(0);}
+  50% {transform: translateY(-20px);}
+  100% {transform: translateY(0);}
+}
+.bottom{
+  position:sticky;
+  height: 25vh;
+  width: 97vw;
+  background-color: black;
+  color:white;
+  bottom:0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column; 
+  border-radius: 10px;
+  
+}
+.icons{
+  display:inline-flex;
+  flex-direction:row;
+  justify-content:center;
+  align-items: center;
+}
+.icons i{
+  cursor: pointer;
+  padding: 10px;
+}
+.popup{
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 3px;
+  margin-inline-end: 3px;
+}
+.moreicons{
+  display:inline-flex;
+  flex-direction: row;
+  width:99vw ;
+  cursor: pointer;
+  padding: 5px;
+  margin-inline-start: 3vw;
+  
+}
+.moreicons a{
+  text-align:left;
+}
+.moreicons p{
+  color: white;
+  display: block;
+  position: sticky;  
+  width: 6vw;
+}
+.moreicons i{
+  display:flex;
+  text-align:right;
+  margin-inline-start: 1199px;
+  position: sticky;
+  
+}
+#myProgressBar{
+
+  width: 90vw;
+  
+}
+a{
+  color:white;
+}
